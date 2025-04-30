@@ -19,16 +19,32 @@ public class CheckGuest {
         // and extra whitespace between name and surname
         String trimUser = user.trim().replaceAll("\\s+", " ");
 
-        // for version
         // Checks whether the user is present in the array
-        for (int i = 0; i < guests.length && trimUser != null; i++) {
 
+        // for version
+        // for (int i = 0; i < guests.length && trimUser != null; i++) {
+
+        // if (trimUser.equals(guests[i])) {
+        // System.out.println("Benvenuto alla festa " + trimUser);
+        // break;
+        // } else if (i == (guests.length - 1)) {
+        // System.out.println("Mi spiace " + trimUser + " ma non sei stato invitato alla
+        // festa");
+        // }
+        // }
+
+        // counter
+        int i = 0;
+
+        // while version
+        while (i < guests.length) {
             if (trimUser.equals(guests[i])) {
-                System.out.println("Benvenuto alla festa " + trimUser);
+                System.out.println("Benvenuto/a alla festa " + trimUser);
                 break;
             } else if (i == (guests.length - 1)) {
                 System.out.println("Mi spiace " + trimUser + " ma non sei stato invitato alla festa");
             }
+            i++;
         }
 
         // DEBUG
