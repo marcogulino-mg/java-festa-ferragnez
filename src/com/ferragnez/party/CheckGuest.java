@@ -7,16 +7,16 @@ public class CheckGuest {
 
         Scanner input = new Scanner(System.in);
 
-        // Vars
+        // * Vars
         String[] guests = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi",
                 "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic" };
 
-        // Name Check
+        // * Name Check
         System.out.println("Inserire nome e cognome...");
         String user = input.nextLine();
 
-        // Remove whitespace from both ends of user
-        // and extra whitespace between name and surname
+        // * Remove whitespace from both ends of user
+        // * and extra whitespace between name and surname
         String trimUser = user.trim().replaceAll("\\s+", " ");
 
         // Checks whether the user is present in the array
@@ -49,6 +49,9 @@ public class CheckGuest {
 
         // DEBUG
         System.out.println(trimUser);
+
+        // * Scanner Closed
+        input.close();
 
     }
 }
