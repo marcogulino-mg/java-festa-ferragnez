@@ -24,8 +24,8 @@ public class CheckGuest {
         // for version
         // for (int i = 0; i < guests.length && trimUser != null; i++) {
 
-        // if (trimUser.equals(guests[i])) {
-        // System.out.println("Benvenuto alla festa " + trimUser);
+        // if (trimUser.toLowerCase().equals(guests[i].toLowerCase())) {
+        // System.out.println("Benvenuto alla festa " + guests[i]);
         // break;
         // } else if (i == (guests.length - 1)) {
         // System.out.println("Mi spiace " + trimUser + " ma non sei stato invitato alla
@@ -38,8 +38,8 @@ public class CheckGuest {
 
         // while version
         while (i < guests.length) {
-            if (trimUser.equals(guests[i])) {
-                System.out.println("Benvenuto/a alla festa " + trimUser);
+            if (trimUser.toLowerCase().equals(guests[i].toLowerCase())) {
+                System.out.println("Benvenuto/a alla festa " + guests[i]);
                 break;
             } else if (i == (guests.length - 1)) {
                 System.out.println("Mi spiace " + trimUser + " ma non sei stato invitato alla festa");
